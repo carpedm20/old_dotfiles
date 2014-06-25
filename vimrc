@@ -8,11 +8,6 @@ set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 
-autocmd FileType make setlocal noexpandtab
-autocmd FileType ruby setlocal sw=2 ts=2 sts=2
-autocmd FileType html setlocal sw=2 ts=2 sts=2
-autocmd FileType python setlocal sw=4 ts=4 sts=4
-
 set ofu=syntaxcomplete#Complete
 
 set t_Co=256              " enable 256-color mode.
@@ -45,9 +40,35 @@ set smartindent           " automatically insert one extra level of indentation
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 "set nowrap                " don't wrap text
 
+setlocal spelllang=en_us
+
+au FileType cpp        setl ts=2 sw=2 sts=2
+au FileType javascript setl ts=2 sw=2 sts=2
+au FileType ruby       setl ts=2 sw=2 sts=2
+au FileType xml        setl ts=2 sw=2 sts=2
+au FileType yaml       setl ts=2 sw=2 sts=2
+au FileType html       setl ts=2 sw=2 sts=2
+au FileType htmldjango setl ts=2 sw=2 sts=2
+au FileType lua        setl ts=2 sw=2 sts=2
+au FileType haml       setl ts=2 sw=2 sts=2
+au FileType css        setl ts=2 sw=2 sts=2
+au FileType sass       setl ts=2 sw=2 sts=2
+au FileType less       setl ts=2 sw=2 sts=2
+au Filetype rst        setl ts=3 sw=3 sts=3
+au FileType golang     setl noet
+au FileType make       setl ts=4 sw=4 sts=4 noet
+au FileType python     setl sw=4 ts=4 sts=4
+
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+nmap <F2> :tabprevious<Enter>
+nmap <F3> :tabnext<Enter>
+nmap <F4> :tabnew<Enter>
+nmap <F5> :make <Enter>
+nmap <F6> :TlistToggle<Enter>
+nmap <F9> :NERDTree<Enter>
 
 ab W w
 ab Wq wq

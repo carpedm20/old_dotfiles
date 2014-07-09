@@ -29,6 +29,10 @@ else # OS X `ls`
     colorflag="-G"
 fi
 
+# Centos Korean fix
+LANG="ko_KR.UTF-8"
+SYSFONT="latarcyrheb-sun16"
+
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh

@@ -1,4 +1,6 @@
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 # export PS1="[\u \W]\\$ "
 #export PS1="\[\033[0;32m\]\u@\h$SEP\w$SEP "
-export PS1="\u:\w $ "
+#export PS1="\u:\w $ "
+export SEP="\e[96m❯\e[m"
+export PS1="\e[94m\u\e[m$SEP\w$SEP "

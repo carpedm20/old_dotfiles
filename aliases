@@ -51,3 +51,6 @@ alias isc="ssh root@10.20.13.110"
 alias gadget="ssh gadget@192.168.0.2"
 alias dicl="ssh asc14@dicl.unist.ac.kr"
 alias mozao="ssh carpedm20@hexa.pro -p 2222"
+alias naver="ssh carpedm20@dgw02.nhnsystem.com"
+
+alias blog="vi ~/blog/themes/dbrgn/templates/article.html"

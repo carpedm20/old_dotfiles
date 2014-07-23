@@ -31,9 +31,9 @@ set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 
 set autoindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smartindent           " automatically insert one extra level of indentation

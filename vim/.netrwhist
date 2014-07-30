@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/carpedm20/blog/minimal-mistakes/assets/fonts'
 let g:netrw_dirhist_2='/home1/irteamsu/social-comment-platform/social_comment/social_comment'
 let g:netrw_dirhist_3='/home1/irteamsu/so_co/social_comment/js'
 let g:netrw_dirhist_4='/home1/irteamsu/aniduk/animation'
 let g:netrw_dirhist_5='/home1/irteamsu/movietag/movietag/utils'
 let g:netrw_dirhist_6='/home1/irteamsu/so_co/social_comment/utils'
+let g:netrw_dirhist_7='/Users/naver/git/foxoffice/scrapy/tutorial'
+let g:netrw_dirhist_8='/Users/naver/git/foxoffice/foxoffice'
+let g:netrw_dirhist_9='/Users/naver/git/foxoffice/static/css'

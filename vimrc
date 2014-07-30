@@ -11,6 +11,7 @@ filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set ofu=syntaxcomplete#Complete
 
 set t_Co=256              " enable 256-color mode.
+syn sync fromstart
 syntax enable             " enable syntax highlighting (previously syntax on).
 colorscheme molokai       " set colorscheme
 
@@ -70,10 +71,10 @@ nmap <F5> :make <Enter>
 nmap <F6> :TlistToggle<Enter>
 nmap <F9> :NERDTree<Enter>
 
-ab W w
 ab Wq wq
 ab wQ wq
 ab WQ wq
 ab Q q
 ab Set set
 ab p set paste
+ab W w

@@ -30,6 +30,8 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
+alias du="du -csh"
+alias ds="du -csh"
 alias dl="cd ~/Downloads"
 alias p="cd ~/projects"
 alias dt="cd ~/dotfiles"

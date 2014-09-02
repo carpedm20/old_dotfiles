@@ -5,6 +5,7 @@
 	"gutter": false,
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"line_numbers": false,
 	"scroll_past_end": true,

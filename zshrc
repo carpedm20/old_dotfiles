@@ -97,3 +97,6 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export MSYS_HOME=/c/msys/1.0
 source /usr/local/bin/virtualenvwrapper.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

@@ -1,4 +1,5 @@
-SEP="\[\033[0;36m\]❯\[\033[00m\]"
-export PS1="\[\033[0;32m\]\u$SEP\w$SEP "
+SEP="\[\033[0;36m\]>\[\033[00m\]"
+#export PS1="\[\033[0;32m\]\u$SEP\w$SEP "
+export PS1="$SEP\w$SEP "
 #export SEP="❯"
 #export PS1="\u$SEP\w$SEP "

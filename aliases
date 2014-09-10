@@ -30,6 +30,7 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
+alias t="tree"
 alias du="du -csh"
 alias ds="du -csh"
 alias dl="cd ~/Downloads"
@@ -42,6 +43,12 @@ alias h="history"
 alias j="jobs"
 alias t="tmux"
 alias tr="tmux source-file ~/.tmux.conf"
+
+alias nginxstop="sudo nginx -s stop"
+alias nginxstart="sudo nginx"
+alias nginxconfig="vi /usr/local/etc/nginx/nginx.conf"
+
+alias julia="/Applications/Julia-0.3.0.app/Contents/Resources/julia/bin/julia"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

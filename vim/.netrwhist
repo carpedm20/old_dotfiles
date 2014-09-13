@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/carpedm20/blog/minimal-mistakes/assets/fonts'
+let g:netrw_dirhist_2='/home/carpedm20/git/isso/isso'
+let g:netrw_dirhist_3='/home/carpedm20/git/LINE/linethrift'
+let g:netrw_dirhist_4='/home/carpedm20/git/curve/curve'
+let g:netrw_dirhist_5='/home/carpedm20/blog/output/about'
+let g:netrw_dirhist_6='/home/carpedm20/ultrasurf/hide_my_python/__pycache__'

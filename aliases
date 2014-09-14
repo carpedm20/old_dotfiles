@@ -61,6 +61,7 @@ alias moza="ssh carpedm20@moza.hexa.pro"
 alias hmoza="ssh dotaitch@moza.hexa.pro"
 alias hexa="ssh carpedm30@hexa.perl.sh"
 alias mozao="ssh carpedm20@hexa.pro -p 2222"
+alias halt2="ssh carpedm20@halt2.iptime.org"
 
 alias gpu="ssh root@10.20.12.220"
 alias isc="ssh root@10.20.13.110"

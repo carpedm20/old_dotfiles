@@ -1,2 +1,2 @@
 # Add `~/bin` to the `$PATH`
-export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";
+# export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";

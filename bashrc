@@ -30,6 +30,7 @@ fi
 LANG="ko_KR.UTF-8"
 SYSFONT="latarcyrheb-sun16"
 
+: '
 # set where virutal environments will live
 export WORKON_HOME=$HOME/.virtualenvs
 # ensure all new environments are isolated from the site-packages directory
@@ -40,6 +41,9 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
     source /usr/local/bin/virtualenvwrapper.sh
+elif [[ -r /usr/bin/virtualenvwrapper.sh ]]; then
+    source /usr/bin/virtualenvwrapper.sh
 else
-    echo "WARNING: Can't find virtualenvwrapper.sh"
+    echo "WARNING: Cant find virtualenvwrapper.sh"
 fi
+'

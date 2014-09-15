@@ -69,6 +69,7 @@ alias gadget="ssh gadget@192.168.0.2"
 alias dicl="ssh asc14@dicl.unist.ac.kr"
 
 alias minsky="ssh carpedm20@minsky.unist.ac.kr"
+alias turing="ssh carpedm20@turing.unist.ac.kr"
 alias pail="ssh carpedm20@10.48.128.212"
 
 alias naver="ssh carpedm20@dgw02.nhnsystem.com"

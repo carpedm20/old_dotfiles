@@ -11,6 +11,7 @@ filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set ofu=syntaxcomplete#Complete
 
 set t_Co=256              " enable 256-color mode.
+syn sync fromstart
 syntax enable             " enable syntax highlighting (previously syntax on).
 colorscheme molokai       " set colorscheme
 
@@ -31,9 +32,9 @@ set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 
 set autoindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smartindent           " automatically insert one extra level of indentation
@@ -58,6 +59,8 @@ au Filetype rst        setl ts=3 sw=3 sts=3
 au FileType golang     setl noet
 au FileType make       setl ts=4 sw=4 sts=4 noet
 au FileType python     setl sw=4 ts=4 sts=4
+au FileType markdown   setl ts=4 sw=4 sts=4
+au FileType md         setl ts=4 sw=4 sts=4
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -70,10 +73,10 @@ nmap <F5> :make <Enter>
 nmap <F6> :TlistToggle<Enter>
 nmap <F9> :NERDTree<Enter>
 
-ab W w
 ab Wq wq
 ab wQ wq
 ab WQ wq
 ab Q q
 ab Set set
 ab p set paste
+ab W w

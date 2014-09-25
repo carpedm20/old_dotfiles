@@ -44,6 +44,7 @@ alias h="history"
 alias j="jobs"
 alias t="tmux"
 alias tr="tmux source-file ~/.tmux.conf"
+alias dir="du -hs"
 
 alias nginxstop="sudo nginx -s stop"
 alias nginxstart="sudo nginx"
@@ -79,3 +80,6 @@ alias pail="ssh carpedm20@10.48.128.212"
 alias naver="ssh carpedm20@dgw02.nhnsystem.com"
 
 alias blog="vi ~/blog/themes/dbrgn/templates/article.html"
+
+alias gr="go run "
+alias gb="go build "

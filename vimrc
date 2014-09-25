@@ -80,3 +80,9 @@ ab Q q
 ab Set set
 ab p set paste
 ab W w
+
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on

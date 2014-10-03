@@ -61,6 +61,7 @@ au FileType make       setl ts=4 sw=4 sts=4 noet
 au FileType python     setl sw=4 ts=4 sts=4
 au FileType markdown   setl ts=4 sw=4 sts=4
 au FileType md         setl ts=4 sw=4 sts=4
+au FileType go         setl ts=4 sw=4 sts=4
 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

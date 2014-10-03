@@ -2,3 +2,8 @@
 # export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";
 export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$HOME/bin:$PATH";
 export GOPATH="$HOME/gocode";
+
+unamestr=`uname`
+if [[ "$unamestr" == 'Darwin' ]]; then
+    export GOROOT="/usr/local/go";
+fi

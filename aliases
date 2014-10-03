@@ -7,7 +7,7 @@ else # OS X `ls`
     colorflag="-G"
 fi
 
-alias ll='ls -alF'
+alias ll='ls -alFh'
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
@@ -49,8 +49,6 @@ alias dir="du -hs"
 alias nginxstop="sudo nginx -s stop"
 alias nginxstart="sudo nginx"
 alias nginxconfig="vi /usr/local/etc/nginx/nginx.conf"
-
-alias julia="/Applications/Julia-0.3.0.app/Contents/Resources/julia/bin/julia"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

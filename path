@@ -2,6 +2,14 @@
 # export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";
 export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$HOME/bin:$PATH";
 export GOPATH="$HOME/gocode";
+export PATH=/usr/local/cuda-6.5/bin:$PATH
+export CUDA_PATH=/usr/local/cuda-6.5
+export LIBDIR=/usr/local/lib
+export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH:$LIBDIR
+export PYTHONPATH=PYTHONPATH:/home/carpedm20/git/caffe/python/
+
+#sudo ldconfig
+
 
 unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then

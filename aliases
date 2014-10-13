@@ -7,7 +7,8 @@ else # OS X `ls`
     colorflag="-G"
 fi
 
-alias ll='ls -alFh'
+alias ll='ls -alFht'
+alias f='find ./ '
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
@@ -84,3 +85,5 @@ alias blog="vi ~/blog/themes/dbrgn/templates/article.html"
 
 alias gr="go run "
 alias gb="go build "
+
+alias smi="nvidia-smi"

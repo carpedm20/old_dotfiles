@@ -67,6 +67,7 @@ alias gpu="ssh root@10.20.12.220"
 alias isc="ssh root@10.20.13.110"
 alias gadget="ssh gadget@192.168.0.2"
 alias dicl="ssh asc14@dicl.unist.ac.kr"
+alias ferrari="ssh carpedm20@10.20.13.123"
 alias unist="ssh cs20111167@uni06.unist.ac.kr"
 
 #alias minsky="ssh carpedm20@10.20.16.247"

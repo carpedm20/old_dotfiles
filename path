@@ -1,6 +1,6 @@
 # Add `~/bin` to the `$PATH`
 # export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";
-export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$HOME/bin:$PATH";
+export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$PATH";
 export GOPATH="$HOME/gocode";
 export PATH=/usr/local/cuda-6.5/bin:$PATH
 export CUDA_PATH=/usr/local/cuda-6.5
@@ -10,6 +10,19 @@ export PYTHONPATH=PYTHONPATH:/home/carpedm20/git/caffe/python/
 
 #sudo ldconfig
 
+
+export PATH="/usr/local/cuda-6.0/bin:$PATH";
+export CUDA_PATH=/usr/local/cuda-6.0
+export LIBDIR=/usr/local/lib
+export LD_LIBRARY_PATH=/usr/local/cuda-6.0/lib64:$LD_LIBRARY_PATH:/home/carpedm20/lib:/home/carpedm20/lib/lib:$LIBDIR
+export PYTHONPATH=PYTHONPATH:/home/carpedm20/git/caffe/python/
+#export C_INCLUDE_PATH=/home/carpedm20/lib/include:$C_INCLUDE_PATH
+#export CPLUS_INCLUDE_PATH=/home/carpedm20/lib/include:$CPLUS_INCLUDE_PATH
+
+export BLAS=~/git/BLAS/libfblas.a
+
+
+#sudo ldconfig
 
 unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then

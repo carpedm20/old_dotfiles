@@ -3,7 +3,7 @@
 " Maintainer: Taehoon Kim <carpedm20@gmail.com>                              "
 "        URL: http://github.com/carpedm20/dotfiles                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+call pathogen#infect()
 set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
@@ -87,3 +87,8 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
+
+syntax enable  
+filetype plugin on  
+let g:go_disable_autoinstall = 0  
+

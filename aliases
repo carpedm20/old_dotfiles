@@ -70,6 +70,7 @@ alias gadget="ssh gadget@192.168.0.2"
 alias dicl="ssh asc14@dicl.unist.ac.kr"
 alias ferrari="ssh carpedm20@10.20.13.123"
 alias unist="ssh cs20111167@uni06.unist.ac.kr"
+alias dorm="ssh carpedm20@10.38.205.34"
 
 #alias minsky="ssh carpedm20@10.20.16.247"
 #alias minsky="ssh carpedm20@10.20.17.176"

@@ -2,6 +2,8 @@
 # export PATH="~/bin:/bin:/usr/bin:$HOME/bin:/Applications/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:$PATH";
 
 # Mac MySQL
+# http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
+# sudo /usr/local/mysql/support-files/mysql.server start
 export PATH="/usr/local/mysql/bin:$PATH"
 
 export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$PATH";
@@ -14,7 +16,7 @@ export PYTHONPATH=PYTHONPATH:/home/carpedm20/git/caffe/python/
 
 #sudo ldconfig
 
-
+# http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_6.5-14_amd64.deb
 export PATH="/usr/local/cuda-6.5/bin:$PATH";
 export CUDA_PATH=/usr/local/cuda-6.5
 export LIBDIR=/usr/local/lib

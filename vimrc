@@ -92,3 +92,10 @@ syntax enable
 filetype plugin on  
 let g:go_disable_autoinstall = 0  
 
+if has("gui_running")
+    "echo "yes, we have a GUI"
+    set mouse=a
+else
+    "echo "Boring old console"
+    set mouse=
+endif

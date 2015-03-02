@@ -65,6 +65,8 @@ agent_start() {
     . "$env" >/dev/null
 }
 
+#carpedm20
+
 if ! agent_is_running; then
     agent_load_env
 fi
@@ -111,3 +113,7 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+

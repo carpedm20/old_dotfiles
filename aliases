@@ -102,3 +102,5 @@ alias gr="go run "
 alias gb="go build "
 
 alias smi="nvidia-smi"
+
+alias nb="ipython notebook --ip='*'"

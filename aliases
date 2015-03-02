@@ -83,6 +83,9 @@ alias titan="ssh carpedm20@10.20.17.220"
 alias brain="ssh carpedm20@10.20.17.165"
 #alias brain="ssh carpedm20@10.20.17.242"
 
+alias one="ssh carpedm20@10.20.17.161"
+alias zero="ssh carpedm20@10.20.17.199"
+
 alias minsky="ssh carpedm20@minsky.unist.ac.kr"
 #alias turing="ssh carpedm20@10.20.16.231"
 alias turing="ssh carpedm20@turing.unist.ac.kr"

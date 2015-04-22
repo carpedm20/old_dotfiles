@@ -34,3 +34,6 @@ unamestr=`uname`
 if [[ "$unamestr" == 'Darwin' ]]; then
     export GOROOT="/usr/local/go";
 fi
+
+# virtualenv
+WORKON_HOME=~/Envs

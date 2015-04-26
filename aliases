@@ -108,3 +108,5 @@ alias smi="nvidia-smi"
 
 alias nb="ipython notebook --ip='*'"
 alias fuck='$(thefuck $(fc -ln -1))'
+
+alias lab="ssh carpedm20@10.20.17.190"

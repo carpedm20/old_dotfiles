@@ -82,7 +82,7 @@ fi
 
 unset env
 
-: '
+
 # set where virutal environments will live
 export WORKON_HOME=$HOME/.virtualenvs
 # ensure all new environments are isolated from the site-packages directory
@@ -98,24 +98,11 @@ elif [[ -r /usr/bin/virtualenvwrapper.sh ]]; then
 else
     echo "WARNING: Cant find virtualenvwrapper.sh"
 fi
-'
-source ~/.rvm/scripts/rvm
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### Virtualenvwrapper
-. /usr/local/bin/virtualenvwrapper.sh
+export TERM=screen-256color
+export TERM=xterm-256color
+

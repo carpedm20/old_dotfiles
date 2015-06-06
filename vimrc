@@ -3,7 +3,6 @@
 " Maintainer: Taehoon Kim <carpedm20@gmail.com>                              "
 "        URL: http://github.com/carpedm20/dotfiles                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
 set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
@@ -13,7 +12,7 @@ set ofu=syntaxcomplete#Complete
 set t_Co=256              " enable 256-color mode.
 syn sync fromstart
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme molokai       " set colorscheme
+colorscheme desert256       " set colorscheme
 
 " Prettify JSON files
 autocmd BufRead,BufNewFile *.json set filetype=json
@@ -99,3 +98,8 @@ else
     "echo "Boring old console"
     set mouse=
 endif
+
+map <Esc>[B <Down>
+
+set t_Co=256                        " force vim to use 256 colors
+let g:solarized_termcolors=256    

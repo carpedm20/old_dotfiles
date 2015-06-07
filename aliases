@@ -110,3 +110,7 @@ alias nb="ipython notebook --ip='*'"
 alias fuck='$(thefuck $(fc -ln -1))'
 
 alias lab="ssh carpedm20@10.20.17.190"
+
+# tmux
+alias ta="tmux a -d -t "
+alias tn="tmux new -s "

@@ -114,3 +114,4 @@ alias lab="ssh carpedm20@10.20.17.190"
 # tmux
 alias ta="tmux a -d -t "
 alias tn="tmux new -s "
+alias tr="tmux source-file ~/.tmux.conf"

@@ -43,7 +43,7 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 setlocal spelllang=en_us
 
 au FileType cpp        setl ts=2 sw=2 sts=2
-au FileType javascript setl ts=4 sw=4 sts=4
+au FileType javascript setl ts=2 sw=2 sts=2
 au FileType ruby       setl ts=2 sw=2 sts=2
 au FileType xml        setl ts=2 sw=2 sts=2
 au FileType yaml       setl ts=2 sw=2 sts=2

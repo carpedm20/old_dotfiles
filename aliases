@@ -80,11 +80,14 @@ alias matlab="ssh pail@ 10.20.17.162"
 #alias minsky="ssh carpedm20@10.20.17.176"
 alias titan="ssh carpedm20@10.20.17.220"
 #alias brain="ssh carpedm20@10.20.17.242"
-alias brain="ssh carpedm20@10.20.17.165"
-#alias brain="ssh carpedm20@10.20.17.242"
+#alias brain="ssh carpedm20@10.20.17.165"
+alias brain="ssh carpedm20@10.20.17.134"
 
 alias zero="ssh carpedm20@10.20.17.179"
 alias one="ssh carpedm20@10.20.17.161"
+
+alias shock="ssh carpedm20@shock.unist.ac.kr"
+alias awe="ssh carpedm20@awe.unist.ac.kr"
 
 alias minsky="ssh carpedm20@minsky.unist.ac.kr"
 #alias turing="ssh carpedm20@10.20.16.231"

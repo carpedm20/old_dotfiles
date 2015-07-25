@@ -119,3 +119,5 @@ alias ta="tmux a -d -t "
 alias tn="tmux new -s "
 alias tr="tmux source-file ~/.tmux.conf"
 alias tl="tmux list-sessions" # tmux ls
+
+alias th="th -lparallel -loptim -lpl -limage"

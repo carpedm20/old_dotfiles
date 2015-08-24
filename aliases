@@ -84,7 +84,9 @@ alias brain="ssh carpedm20@10.20.17.165"
 #alias brain="ssh carpedm20@10.20.17.242"
 
 alias zero="ssh carpedm20@10.20.17.179"
+alias awe="ssh carpedm20@awe.unist.ac.kr"
 alias one="ssh carpedm20@10.20.17.161"
+alias shock="ssh carpedm20@shock.unist.ac.kr"
 
 alias minsky="ssh carpedm20@minsky.unist.ac.kr"
 #alias turing="ssh carpedm20@10.20.16.231"
@@ -114,3 +116,6 @@ alias lab="ssh carpedm20@10.20.17.190"
 # tmux
 alias ta="tmux a -d -t "
 alias tn="tmux new -s "
+
+# log
+alias loginh="sudo cat /var/log/auth.log | grep systemd-logind"

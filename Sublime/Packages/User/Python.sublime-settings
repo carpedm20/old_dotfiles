@@ -1,9 +1,0 @@
-{
-  // base settings
-  "auto_complete": true,
-  "sublimelinter": false,
-  "tab_size": 4,
-  "word_wrap": true,
-  "translate_tabs_to_spaces": true,
-  "use_tab_stops": true,
-}

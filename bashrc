@@ -79,30 +79,18 @@ if ! agent_is_running; then
 elif ! agent_has_keys; then
     ssh-add
 fi
-
-unset env
-
-
-# set where virutal environments will live
-export WORKON_HOME=$HOME/.virtualenvs
-# ensure all new environments are isolated from the site-packages directory
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-# use the same directory for virtualenvs as virtualenvwrapper
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# makes pip detect an active virtualenv and install to it
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-elif [[ -r /usr/bin/virtualenvwrapper.sh ]]; then
-    source /usr/bin/virtualenvwrapper.sh
-else
-    echo "WARNING: Cant find virtualenvwrapper.sh"
-fi
-
+export TERM="xterm-256color"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export TERM=screen-256color
-export TERM=xterm-256color
+# set where virutal environments will live   
+export WORKON_HOME=$HOME/.virtualenvs    
+# ensure all new environments are isolated from the site-packages directory    
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'    
+# use the same directory for virtualenvs as virtualenvwrapper    
+export PIP_VIRTUALENV_BASE=$WORKON_HOME    
+# makes pip detect an active virtualenv and install to it    
+export PIP_RESPECT_VIRTUALENV=true   
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 

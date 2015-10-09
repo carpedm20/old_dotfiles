@@ -94,3 +94,6 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true   
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
+
+
+. /home/carpedm20/torch/install/bin/torch-activate

@@ -86,7 +86,7 @@ alias brain="ssh carpedm20@10.20.17.134"
 alias zero="ssh carpedm20@10.20.17.179"
 alias awe="ssh carpedm20@awe.unist.ac.kr"
 alias one="ssh carpedm20@10.20.17.161"
-alias shock="ssh carpedm20@shock.unist.ac.kr"
+alias shock="ssh carpedm20@shock.unist.ac.kr -Y"
 
 alias shock="ssh carpedm20@shock.unist.ac.kr"
 alias awe="ssh carpedm20@awe.unist.ac.kr"
@@ -101,6 +101,7 @@ alias pail="ssh carpedm20@pail.unist.ac.kr"
 alias lab="ssh carpedm20@10.20.17.190"
 #alias lab="ssh carpedm20@10.20.17.190"
 # lab windows my seat : 10.48.129.154
+alias kolmo="ssh carpedm20@10.20.17.135"
 
 alias naver="ssh carpedm20@dgw02.nhnsystem.com"
 

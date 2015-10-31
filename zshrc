@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="simple"
 DEFAULT_USER="carpedm20"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -96,7 +96,6 @@ fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export MSYS_HOME=/c/msys/1.0
-source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

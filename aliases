@@ -133,3 +133,13 @@ alias th="th -lparallel -loptim -lpl -limage"
 
 alias voyage="ssh carpedm20@14.52.252.252"
 alias vg="ssh carpedm20@14.52.252.252"
+
+# git
+git() {
+    if [[ $@ == "status" ]]; then
+        command git status -u
+    else
+        command git "$@"
+    fi
+}
+#alias "git status"="git status -u"

@@ -92,8 +92,3 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PIP_VIRTUALENV_BASE=$WORKON_HOME    
 # makes pip detect an active virtualenv and install to it    
 export PIP_RESPECT_VIRTUALENV=true   
-source /usr/local/bin/virtualenvwrapper_lazy.sh
-
-
-
-. /home/carpedm20/torch/install/bin/torch-activate

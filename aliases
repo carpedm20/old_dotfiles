@@ -143,3 +143,6 @@ git() {
     fi
 }
 #alias "git status"="git status -u"
+
+# Docker
+alias drm="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"

@@ -102,4 +102,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-. /home/carpedm20/git/torch/install/bin/torch-activate
+source ~/.bashrc

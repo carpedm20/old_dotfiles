@@ -1,9 +1,18 @@
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
+if [ "$(uname)" == "Darwin" ]; then
+    for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    done;
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    for file in ~/.{path,exports,aliases,functions,extra}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    done;
+    # Do something under GNU/Linux platform
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    # Do something under Windows NT platform
+fi
 unset file;
 
 # If fortune is installed, run a fortune
@@ -96,3 +105,8 @@ export PIP_RESPECT_VIRTUALENV=true
 
 #export DISPLAY=:0.0
 #gsettings set org.gnome.Vino require-encryption false
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# added by Anaconda2 2.4.0 installer
+export PATH="/Users/carpedm20/anaconda2/bin:$PATH"

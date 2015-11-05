@@ -131,8 +131,10 @@ alias loginh="sudo cat /var/log/auth.log | grep systemd-logind"
 
 alias th="th -lparallel -loptim -lpl -limage"
 
-alias voyage="ssh carpedm20@14.52.252.252"
-alias vg="ssh carpedm20@14.52.252.252"
+#alias voyage="ssh carpedm20@14.52.252.252"
+#alias vg="ssh carpedm20@14.52.252.252"
+alias voyage="ssh carpedm20@220.117.200.36"
+alias vg="ssh carpedm20@220.117.200.36"
 
 # git
 git() {
@@ -143,3 +145,4 @@ git() {
     fi
 }
 #alias "git status"="git status -u"
+

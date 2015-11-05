@@ -1,16 +1,17 @@
+#!/bin/bash
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-if [ "$(uname)" == "Darwin" ]; then
-    for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-        [ -r "$file" ] && [ -f "$file" ] && source "$file";
-    done;
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     for file in ~/.{path,exports,aliases,functions,extra}; do
         [ -r "$file" ] && [ -f "$file" ] && source "$file";
     done;
+elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
+    for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    done;
     # Do something under GNU/Linux platform
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+elif [[ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]]; then
     # Do something under Windows NT platform
 fi
 unset file;

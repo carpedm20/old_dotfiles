@@ -6,10 +6,12 @@ if [[ "$(uname)" == "Darwin" ]]; then
     for file in ~/.{path,exports,aliases,functions,extra}; do
         [ -r "$file" ] && [ -f "$file" ] && source "$file";
     done;
+    source /usr/local/opt/autoenv/activate.sh
 elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
     for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
         [ -r "$file" ] && [ -f "$file" ] && source "$file";
     done;
+    source ~/.autoenv/activate.sh
     # Do something under GNU/Linux platform
 elif [[ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]]; then
     # Do something under Windows NT platform

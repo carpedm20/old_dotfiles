@@ -109,7 +109,7 @@ export PIP_RESPECT_VIRTUALENV=true
 #export DISPLAY=:0.0
 #gsettings set org.gnome.Vino require-encryption false
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # added by Anaconda2 2.4.0 installer
 export PATH="/Users/carpedm20/anaconda2/bin:$PATH"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

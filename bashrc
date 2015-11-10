@@ -114,3 +114,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # added by Anaconda2 2.4.0 installer
 export PATH="/Users/carpedm20/anaconda2/bin:$PATH"
+
+# Torch
+. /home/carpedm20/git/torch/install/bin/torch-activate
+
+# Chrome Remote Desktop
+export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES="YOUR_PREFERRED/DEFAULT_RESOLUTION_HERE"

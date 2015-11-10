@@ -4,7 +4,7 @@
 # Mac MySQL
 # http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
 # sudo /usr/local/mysql/support-files/mysql.server start
-export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/mysql/bin:$HOME/bin:$PATH"
 
 export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$PATH";
 export GOPATH="$HOME/gocode";

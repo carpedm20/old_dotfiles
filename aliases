@@ -151,3 +151,10 @@ alias drm="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
 # Softlayer
 alias soft1="ssh root@208.43.77.196 -i ~/.ssh/carpedm20.pem"
+
+# venv
+alias mkvenv="virtualenv .venv; echo \". .venv/bin/activate\" > .env"
+
+# ipdb
+alias pydbg="echo \"import ipdb;ipdb.set_trace()\""
+alias pydbg="echo \"import ipdb;ipdb.set_trace()\""

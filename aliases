@@ -151,6 +151,7 @@ alias drm="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
 # Softlayer
 alias soft1="ssh root@208.43.77.196 -i ~/.ssh/carpedm20.pem"
+alias soft2="ssh root@169.54.26.85 -i ~/.ssh/carpedm20.pem"
 
 # venv
 alias mkvenv="virtualenv .venv; echo \". .venv/bin/activate\" > .env"

@@ -4,7 +4,7 @@
 # Mac MySQL
 # http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
 # sudo /usr/local/mysql/support-files/mysql.server start
-export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/mysql/bin:$HOME/bin:$PATH"
 
 export PATH="/usr/local/go/bin:~/bin:/bin:/usr/bin:$PATH";
 export GOPATH="$HOME/gocode";
@@ -37,3 +37,7 @@ fi
 
 # virtualenv
 WORKON_HOME=~/Envs
+
+# spark
+export SPARK_HOME=$HOME/git/spark-1.5.2-bin-hadoop2.6
+export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH

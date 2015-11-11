@@ -80,6 +80,10 @@ agent_start() {
 
 #carpedm20
 
+# git
+git config --global user.name "Taehoon Kim"
+git config --global user.email carpedm20@gmail.com
+
 if ! agent_is_running; then
     agent_load_env
 fi
@@ -114,3 +118,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # added by Anaconda2 2.4.0 installer
 export PATH="/Users/carpedm20/anaconda2/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

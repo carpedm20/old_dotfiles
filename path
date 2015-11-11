@@ -37,3 +37,7 @@ fi
 
 # virtualenv
 WORKON_HOME=~/Envs
+
+# spark
+export SPARK_HOME=$HOME/git/spark-1.5.2-bin-hadoop2.6
+export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH

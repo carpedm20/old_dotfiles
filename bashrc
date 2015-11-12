@@ -80,6 +80,10 @@ agent_start() {
 
 #carpedm20
 
+# git
+git config --global user.name "Taehoon Kim"
+git config --global user.email carpedm20@gmail.com
+
 if ! agent_is_running; then
     agent_load_env
 fi
@@ -110,7 +114,16 @@ export PIP_RESPECT_VIRTUALENV=true
 #export DISPLAY=:0.0
 #gsettings set org.gnome.Vino require-encryption false
 
-# added by Anaconda2 2.4.0 installer
-export PATH="/Users/carpedm20/anaconda2/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Chrome Remote Desktop
+export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES="YOUR_PREFERRED/DEFAULT_RESOLUTION_HERE"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"

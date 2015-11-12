@@ -157,4 +157,4 @@ alias mkvenv="virtualenv .venv; echo \". .venv/bin/activate\" > .env"
 
 # ipdb
 alias pydbg="echo \"import ipdb;ipdb.set_trace()\""
-alias pydbg="echo \"import ipdb;ipdb.set_trace()\""
+alias pygdb="echo \"import ipdb;ipdb.set_trace()\""

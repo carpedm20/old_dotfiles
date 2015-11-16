@@ -127,3 +127,10 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+if [ ! -d "$WORKON_HOME" ]; then
+  mkdir $WORKON_HOME
+fi
+source $HOME/dotfiles/virtualenvwrapper.sh

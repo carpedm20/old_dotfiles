@@ -114,16 +114,12 @@ export PIP_RESPECT_VIRTUALENV=true
 #export DISPLAY=:0.0
 #gsettings set org.gnome.Vino require-encryption false
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # Chrome Remote Desktop
 export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES="YOUR_PREFERRED/DEFAULT_RESOLUTION_HERE"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+# torch
+export PATH=/home/carpedm20/torch/install/bin:$PATH
+export LD_LIBRARY_PATH=/home/carpedm20/torch/install/lib:$LD_LIBRARY_PATH 
+export DYLD_LIBRARY_PATH=/home/carpedm20/torch/install/lib:$DYLD_LIBRARY_PATH 

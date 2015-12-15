@@ -3,7 +3,7 @@
 " Maintainer: Taehoon Kim <carpedm20@gmail.com>                              "
 "        URL: http://github.com/carpedm20/dotfiles                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
+set nocompatible         " get rid of Vi compatibility mode. SET F4IRST!
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 
@@ -80,6 +80,7 @@ ab Q q
 ab Set set
 ab p set paste
 ab W w
+ab pdb import ipdb; ipdb.set_trace()
 
 filetype off
 filetype plugin indent off
@@ -103,3 +104,6 @@ map <Esc>[B <Down>
 
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256    
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
